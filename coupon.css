@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    position: absolute;
+    background-color: #d9b234; 
+    width: 100%; 
+    height: 700px; 
+    margin: 20px;
+
+}
+
+.article {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%; 
+    height: auto;
+    padding: 20px;
+    background-color: rgb(213, 216, 25);
+}
+
+aside {
+    position: absolute;
+    left: 61%;
+    top: 10px;
+    width: 400px; 
+    height: 300px; 
+    background-color: rgb(226, 206, 24);
+    color: black; 
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+.coupon, .couponPlus {
+    background-color: yellow;
+    border: 2px dashed purple;
+    margin: 5px;
+    padding: 5px;
+    flex: 1 1 auto; 
+    height: 120px; 
+}
+
+.coupon img, .couponPlus img {
+    max-width: 100%;
+    height: auto; 
+}
+
+
+@media screen and (max-width: 1000px) {
+    article {
+        width: 100%; 
+    }
+    aside {
+        position: static;
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    article {
+        width: 60%; 
+    }
+    aside {
+        position: absolute; 
+        left: 61%; 
+        height: 300px; 
+    }
+}
+
+
+
